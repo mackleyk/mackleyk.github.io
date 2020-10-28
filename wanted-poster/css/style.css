@@ -34,7 +34,7 @@ body {
 }
 main {
     background-color:#ddd;
-    background-image:url(/images/wrinkled-white-paper-background.jpg);
+    background-image: url(../images/wrinkled-white-paper-background.jpg)
     background-size:cover;
     background-repeat: no-repeat;
     border:1px solid #333;
@@ -101,10 +101,7 @@ h4{
 }
 
 span{
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding: 0, .5, 0, .5;
 }
 h5{
     font-size:1rem;
@@ -126,13 +123,8 @@ section{
     }
 
 p{
-    margin-top: 1rm;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    margin:2rem, auto;
+    padding:0, 2rem;
     width: 90%;
     text-align: left;
 }
@@ -141,10 +133,8 @@ p{
 /* Image & Figure */
 img{
     width: 100%;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin:0, auto;
     max-width: 50rem;
-    margin-right: auto;
 }
 figure{
     margin-bottom: 2rem;
@@ -157,5 +147,7 @@ figcaption{
 
 footer{
     padding: 1rem;
-    border-top: width:1rem, solid:#333;
+    border-top: width:2rem;
+    border-top-style:solid;
+    border-top-style: color:#333;
 }
