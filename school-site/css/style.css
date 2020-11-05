@@ -95,10 +95,10 @@ header, footer {
 /* Typography Styles */
 
 html{
-    font-family: m font, sans-serif;
+    font-family: m font, Arial, sans-serif;
     }
 h1{
-    letter-spacing: .25rem;
+    letter-spacing: .125rem;
     font-family: j font, serif;
     font-size: 3.75rem;
     margin:1.125rem;
@@ -106,10 +106,9 @@ h1{
 }
 
 h2{
-    letter-spacing: .25rem;
-    font-family: j font, serif;
+    letter-spacing: .125rem;
+    font-family: j font, Garamond, serif;
     font-size:1.5rem;
-    
 }
 
 h2 +p{
