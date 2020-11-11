@@ -50,7 +50,7 @@
 
 header{
     letter-spacing: .125rem;
-    font-family: m font, sans-serif;
+    font-family: "m font", sans-serif;
     font-size: 1.75rem;
     margin: 1.5rem;
     text-align: center;
@@ -68,7 +68,7 @@ h1:nth-child(2){
     margin: 0;
     padding: .25rem;
     width: 35%;
-}
+    }
 
 nav{
     border-top: .125rem solid black;
@@ -87,10 +87,14 @@ li{
 
 .subsection{
     display: grid;
-    grid-template-columns: 6(auto-fit);
+    grid-template-columns: 6rem(auto-fit);
 }
 
-img{
-    display: inline-grid;
-}
 
+p{
+    letter-spacing: .125rem;
+    word-spacing: .025;
+    font-size: .75rem;
+    padding: .5rem;
+    margin: .25rem;
+}
