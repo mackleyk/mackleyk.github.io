@@ -85,10 +85,7 @@ li{
     text-decoration-line: none;
 }
 
-.subsection{
-    display: grid;
-    grid-template-columns: 6rem(auto-fit);
-}
+
 
 
 p{
@@ -97,4 +94,31 @@ p{
     font-size: .75rem;
     padding: .5rem;
     margin: .25rem;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 60% 35%;
+    grid-template-areas: 
+        "a a b"
+        "a a b"
+        "c c d";
+}
+
+.grid-item-1{
+    grid-area: a;
+}
+
+.grid-item-2{
+    grid-area: c;
+}
+
+.grid-item-3{
+    grid-area: b;
+}
+
+.grid-item-4{
+    grid-area: d;
 }
