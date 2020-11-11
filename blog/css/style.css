@@ -59,7 +59,7 @@ header{
 }
 
 h1:nth-child(2){
-    border-color: blue;
+    border-color: darkblue;
     background-color: blue;
 }
 
@@ -85,12 +85,12 @@ li{
     text-decoration-line: none;
 }
 
-img{
-    display: flex;
-    grid-template-columns: repeat(autofit, minmax(200px, 1fr))
+.subsection{
+    display: grid;
+    grid-template-columns: 6(auto-fit);
 }
 
-.flex-container{
-    display: flex;
-    flex-direction: row;
+img{
+    display: inline-grid;
 }
+
