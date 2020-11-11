@@ -90,7 +90,7 @@ li{
 
 p{
     letter-spacing: .125rem;
-    word-spacing: .025;
+    word-spacing: .025rem;
     font-size: .75rem;
     padding: .5rem;
     margin: .25rem;
@@ -102,13 +102,14 @@ p{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 60% 35%;
     grid-template-areas: 
-        "a a b"
-        "a a b"
-        "c c d";
+        "a a a b"
+        "a a a b"
+        "c c c d";
 }
 
 .grid-item-1{
     grid-area: a;
+    column-span: 2;
 }
 
 .grid-item-2{
