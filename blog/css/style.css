@@ -48,19 +48,24 @@
 
 /* ------ START WRITING YOUR CODE BELOW ------ */
 
+
 header{
     letter-spacing: .125rem;
-    font-family: "m font", sans-serif;
-    font-size: 1.75rem;
+    font-family: "u font", serif;
+    font-size: 1.55rem;
     margin: 1.5rem;
     text-align: center;
     transform: rotate(5deg);
     padding: 1.5rem;
 }
 
-h1:nth-child(2){
+.highlight{
     border-color: darkblue;
     background-color: blue;
+    color: white;
+    border-radius: 1.25rem .75rem;
+    padding: .25rem;
+    font-style: bold;
 }
 
 .article-image{
@@ -68,7 +73,19 @@ h1:nth-child(2){
     margin: 0;
     padding: .25rem;
     width: 35%;
+    max-height: 50%;
     }
+
+.grid{
+    display: inline-grid; 
+    grid-template-areas: 
+        "a a b"
+        "a a b"
+        "c c d";
+    justify-content: space-around;
+}
+
+
 
 nav{
     border-top: .125rem solid black;
@@ -80,46 +97,126 @@ nav{
     width: 100%;
 }
 
+nav a:active{
+    text-decoration-line: none;
+}
+
 li{
     display: inline;
     text-decoration-line: none;
 }
 
-
-
-
 p{
     letter-spacing: .125rem;
-    word-spacing: .025rem;
+    word-spacing: .0025rem;
     font-size: .75rem;
     padding: .5rem;
     margin: .25rem;
+    font-family: "l font", sans-serif;
+}
+
+@font-face{
+    font-family:"m font", sans-serif;
+    src: url(../fonts/sans-serif/montserrat-regular)
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:"l font", sans-serif;
+    src: url(../fonts/sans-serif/lato-regular)
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:"r font", sans-serif;
+    src: url(../fonts/sans-serif/robotoslab-regular)
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:"o font", sans-serif;
+    src: url(../fonts/sans-serif/opensans-regular)   
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:"j font", serif;
+    src: url(../fonts/sans/josefinslab-regular)
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:"ro font", sans-serif;
+    src: url(../fonts/sans/robotoslab-regular)
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:"rz font", sans-serif;
+    src: url(../fonts/sans/rozhaone-regular)
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:"u font", sans-serif;
+    src: url(../fonts/sans/ultra-regular)
+    font-weight:normal;
+    font-style:normal;
+}
+
+aside{
+    float: right;
+    text-align: right;
+    
+}
+
+footer{
+    text-align:right;
+    font-family: rz font, sans-serif;
+    font-size: .80rem;
+}
+
+footer+a{
+    text-align: left;
+}
+
+.expand{
+    text-decoration: none;
+    width: 50%;
+}
+
+time{
+    font-family:o font, sans-serif;
+    font-style: italic;
+}
+
+button{
+    font-family: u font, serif;
+    font-weight: 200;
+    font-size: 2rem;
+    background-color: dodgerblue;
+    border-color:royalblue;
+    color: white;
+    border-radius: 1rem;
+}
+
+a{
+    outline: none;
 }
 
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 60% 35%;
-    grid-template-areas: 
-        "a a a b"
-        "a a a b"
-        "c c c d";
+a:link{
+    color: #33659A;
 }
 
-.grid-item-1{
-    grid-area: a;
-    column-span: 2;
-}
+a:visited{
+    color:#33658A;
+    }
 
-.grid-item-2{
-    grid-area: c;
-}
+a:focus{
+    text-decoration-line: none;
+    }
 
-.grid-item-3{
-    grid-area: b;
-}
-
-.grid-item-4{
-    grid-area: d;
-}
+a:hover{
+    text-decoration-line: none;
+    }
