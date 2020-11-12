@@ -65,7 +65,7 @@ header{
     color: white;
     border-radius: 1.25rem .75rem;
     padding: .25rem;
-    font-style: bold;
+    font-weight: bold;  
 }
 
 .article-image{
@@ -165,12 +165,13 @@ p{
 
 footer{
     text-align:right;
-    font-family: rz font, sans-serif;
+    font-family: "rz font", sans-serif;
     font-size: .80rem;
 }
 
 footer+a{
     text-align: left;
+    float: left;
 }
 
 .expand{
@@ -179,12 +180,12 @@ footer+a{
 }
 
 time{
-    font-family:o font, sans-serif;
+    font-family:"o font", sans-serif;
     font-style: italic;
 }
 
 button{
-    font-family: u font, serif;
+    font-family: "u font", serif;
     font-weight: 200;
     font-size: 2rem;
     background-color: dodgerblue;
@@ -197,7 +198,6 @@ a{
     outline: none;
     text-decoration-line: none;
 }
-
 
 a:link{
     color: #33659A;
@@ -213,4 +213,5 @@ a:focus{
 
 a:hover{
     text-decoration-line: none;
+    color:goldenrod;
     }
