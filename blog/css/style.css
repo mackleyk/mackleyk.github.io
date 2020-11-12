@@ -52,7 +52,7 @@
 header{
     letter-spacing: .125rem;
     font-family: "u font", serif;
-    font-size: 1.55rem;
+    font-size: 2.55rem;
     margin: 1rem;
     text-align: center;
     transform: rotate(5deg);
@@ -70,19 +70,17 @@ header{
 
 .article-image{
     float:left;
-    margin: 0;
-    padding: .25rem;
-    width: 35%;
-    max-height: 50%;
-    }
+    margin: auto;
+    padding-right:45%;
+    padding-bottom: 1%;
+    width: 3rem;
+}
 
 .grid{
-    display: inline-grid; 
-    grid-template-areas: 
-        "a a b"
-        "a a b"
-        "c c d";
-    justify-content: space-around;
+    display: grid; 
+    grid-template-columns:repeat(6, auto);
+    width: 100%;
+    float: left
 }
 
 nav{
@@ -169,11 +167,12 @@ footer{
     font-size: .80rem;
 }
 
-footer+a{
+.{
     text-align: left;
-    float: left;
 }
-
+footer a{
+    text-align: right
+}
 .expand{
     text-decoration: none;
     width: 50%;
@@ -182,6 +181,8 @@ footer+a{
 time{
     font-family:"o font", sans-serif;
     font-style: italic;
+    text-align: left;
+    
 }
 
 button{
@@ -192,6 +193,8 @@ button{
     border-color:royalblue;
     color: white;
     border-radius: 1rem;
+    text-align: center;
+    margin-left: 30%;
 }
 
 a{
@@ -215,3 +218,22 @@ a:hover{
     text-decoration-line: none;
     color:goldenrod;
     }
+
+.main-section{
+    display: flex;
+}
+
+article{
+    width:70%;
+} 
+
+aside{
+    width: 30%;
+    border:.5rem;
+    border-color: black;
+}
+
+h3{
+    padding: 0;
+    margin: 0;
+}
