@@ -53,10 +53,10 @@ header{
     letter-spacing: .125rem;
     font-family: "u font", serif;
     font-size: 1.55rem;
-    margin: 1.5rem;
+    margin: 1rem;
     text-align: center;
     transform: rotate(5deg);
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .highlight{
@@ -85,25 +85,17 @@ header{
     justify-content: space-around;
 }
 
-
-
 nav{
     border-top: .125rem solid black;
     border-bottom: .125rem solid black;
     word-spacing: 8rem;
     text-align: left;
     color: black;
-    text-decoration: none;
     width: 100%;
-}
-
-nav a:active{
-    text-decoration-line: none;
 }
 
 li{
     display: inline;
-    text-decoration-line: none;
 }
 
 p{
@@ -117,57 +109,58 @@ p{
 
 @font-face{
     font-family:"m font", sans-serif;
-    src: url(../fonts/sans-serif/montserrat-regular)
-    font-weight:normal;
-    font-style:normal;
-}
-@font-face{
-    font-family:"l font", sans-serif;
-    src: url(../fonts/sans-serif/lato-regular)
-    font-weight:normal;
-    font-style:normal;
-}
-@font-face{
-    font-family:"r font", sans-serif;
-    src: url(../fonts/sans-serif/robotoslab-regular)
-    font-weight:normal;
-    font-style:normal;
-}
-@font-face{
-    font-family:"o font", sans-serif;
-    src: url(../fonts/sans-serif/opensans-regular)   
-    font-weight:normal;
-    font-style:normal;
-}
-@font-face{
-    font-family:"j font", serif;
-    src: url(../fonts/sans/josefinslab-regular)
-    font-weight:normal;
-    font-style:normal;
-}
-@font-face{
-    font-family:"ro font", sans-serif;
-    src: url(../fonts/sans/robotoslab-regular)
-    font-weight:normal;
-    font-style:normal;
-}
-@font-face{
-    font-family:"rz font", sans-serif;
-    src: url(../fonts/sans/rozhaone-regular)
-    font-weight:normal;
-    font-style:normal;
-}
-@font-face{
-    font-family:"u font", sans-serif;
-    src: url(../fonts/sans/ultra-regular)
+    src: url(../fonts/sans-serif/montserrat-regular);
     font-weight:normal;
     font-style:normal;
 }
 
-aside{
-    float: right;
-    text-align: right;
-    
+@font-face{
+    font-family:"l font", sans-serif;
+    src: url(../fonts/sans-serif/lato-regular);
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:"r font", sans-serif;
+    src: url(../fonts/sans-serif/robotoslab-regular);
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:"o font", sans-serif;
+    src: url(../fonts/sans-serif/opensans-regular);   
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:"j font", serif;
+    src: url(../fonts/sans/josefinslab-regular);
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:"ro font", sans-serif;
+    src: url(../fonts/sans/robotoslab-regular);
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:"rz font", sans-serif;
+    src: url(../fonts/sans/rozhaone-regular);
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:"u font", sans-serif;
+    src: url(../fonts/sans/ultra-regular);
+    font-weight:normal;
+    font-style:normal;
 }
 
 footer{
@@ -202,6 +195,7 @@ button{
 
 a{
     outline: none;
+    text-decoration-line: none;
 }
 
 
