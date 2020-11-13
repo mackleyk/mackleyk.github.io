@@ -52,7 +52,7 @@
 header{
     letter-spacing: .125rem;
     font-family: "u font", serif;
-    font-size: 2.55rem;
+    font-size: 1.75rem;
     margin: 1rem;
     text-align: center;
     transform: rotate(5deg);
@@ -71,8 +71,8 @@ header{
 .article-image{
     float:left;
     margin: auto;
-    padding-right:45%;
-    padding-bottom: 1%;
+    padding-right:23rem;
+    padding-bottom: 0;
     width: 3rem;
 }
 
@@ -80,7 +80,8 @@ header{
     display: grid; 
     grid-template-columns:repeat(6, auto);
     width: 100%;
-    float: left
+    float: left;
+    background-color: antiquewhite;
 }
 
 nav{
@@ -94,6 +95,10 @@ nav{
 
 li{
     display: inline;
+}
+li:nth-child(2){
+    text-decoration-line: line-through;
+    transform: rotate(-5deg);
 }
 
 p{
@@ -167,11 +172,12 @@ footer{
     font-size: .80rem;
 }
 
-.{
+.copyright{
     text-align: left;
 }
 footer a{
-    text-align: right
+    text-align: right;
+    overflow: auto;
 }
 .expand{
     text-decoration: none;
@@ -234,6 +240,7 @@ aside{
 }
 
 h3{
-    padding: 0;
-    margin: 0;
+    margin-top: .75rem;
+    margin-bottom: 0;
 }
+
