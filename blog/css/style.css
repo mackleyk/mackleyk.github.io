@@ -60,11 +60,11 @@ header{
 }
 
 .highlight{
-    border-color: darkblue;
-    background-color: blue;
+    border-color: darkslateblue;
+    background-color: mediumblue;
     color: white;
     border-radius: 1.25rem .75rem;
-    padding: .25rem;
+    padding: .5rem;
     font-weight: bold;  
 }
 
@@ -72,16 +72,15 @@ header{
     float:left;
     margin: auto;
     padding-right:23rem;
-    padding-bottom: 0;
     width: 3rem;
 }
 
 .grid{
     display: grid; 
     grid-template-columns:repeat(6, auto);
-    width: 100%;
-    float: left;
     background-color: antiquewhite;
+    clear: left;
+    margin: 0;
 }
 
 nav{
@@ -91,6 +90,10 @@ nav{
     text-align: left;
     color: black;
     width: 100%;
+}
+
+nav a:nth-child(2){
+    transform: rotate(-5deg)
 }
 
 li{
@@ -182,6 +185,7 @@ footer a{
 .expand{
     text-decoration: none;
     width: 50%;
+    display: block;
 }
 
 time{
@@ -200,7 +204,7 @@ button{
     color: white;
     border-radius: 1rem;
     text-align: center;
-    margin-left: 30%;
+    margin: 25%;
 }
 
 a{
@@ -214,10 +218,6 @@ a:link{
 
 a:visited{
     color:#33658A;
-    }
-
-a:focus{
-    text-decoration-line: none;
     }
 
 a:hover{
@@ -234,13 +234,13 @@ article{
 } 
 
 aside{
-    width: 30%;
-    border:.5rem;
-    border-color: black;
+    width:30%;
 }
 
-h3{
-    margin-top: .75rem;
-    margin-bottom: 0;
+.grid img{
+    width: 100%;
 }
 
+.pic{
+    padding-top: 0;
+}
