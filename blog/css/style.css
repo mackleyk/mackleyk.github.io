@@ -47,7 +47,33 @@
 
 
 /* ------ START WRITING YOUR CODE BELOW ------ */
+@font-face{
+    font-family:"l font", sans-serif;
+    src: url(../fonts/sans-serif/lato-regular);
+    font-weight:normal;
+    font-style:normal;
+}
 
+@font-face{
+    font-family:"o font", sans-serif;
+    src: url(../fonts/sans-serif/opensans-regular);   
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:"rz font", sans-serif;
+    src: url(../fonts/sans/rozhaone-regular);
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:"u font", sans-serif;
+    src: url(../fonts/sans/ultra-regular);
+    font-weight:normal;
+    font-style:normal;
+}
 
 header{
     letter-spacing: .125rem;
@@ -57,6 +83,12 @@ header{
     text-align: center;
     transform: rotate(5deg);
     padding: 1rem;
+}
+
+h3{
+    margin: .5rem;
+    margin-bottom: 0;
+    padding: .5rem;
 }
 
 .highlight{
@@ -79,8 +111,12 @@ header{
     display: grid; 
     grid-template-columns:repeat(6, auto);
     background-color: antiquewhite;
-    clear: left;
+    clear:both;
     margin: 0;
+}
+
+.grid img{
+    width: 100%;
 }
 
 nav{
@@ -92,16 +128,12 @@ nav{
     width: 100%;
 }
 
-nav a:nth-child(2){
-    transform: rotate(-5deg)
-}
-
 li{
     display: inline;
 }
+
 li:nth-child(2){
     text-decoration-line: line-through;
-    transform: rotate(-5deg);
 }
 
 p{
@@ -113,62 +145,6 @@ p{
     font-family: "l font", sans-serif;
 }
 
-@font-face{
-    font-family:"m font", sans-serif;
-    src: url(../fonts/sans-serif/montserrat-regular);
-    font-weight:normal;
-    font-style:normal;
-}
-
-@font-face{
-    font-family:"l font", sans-serif;
-    src: url(../fonts/sans-serif/lato-regular);
-    font-weight:normal;
-    font-style:normal;
-}
-
-@font-face{
-    font-family:"r font", sans-serif;
-    src: url(../fonts/sans-serif/robotoslab-regular);
-    font-weight:normal;
-    font-style:normal;
-}
-
-@font-face{
-    font-family:"o font", sans-serif;
-    src: url(../fonts/sans-serif/opensans-regular);   
-    font-weight:normal;
-    font-style:normal;
-}
-
-@font-face{
-    font-family:"j font", serif;
-    src: url(../fonts/sans/josefinslab-regular);
-    font-weight:normal;
-    font-style:normal;
-}
-
-@font-face{
-    font-family:"ro font", sans-serif;
-    src: url(../fonts/sans/robotoslab-regular);
-    font-weight:normal;
-    font-style:normal;
-}
-
-@font-face{
-    font-family:"rz font", sans-serif;
-    src: url(../fonts/sans/rozhaone-regular);
-    font-weight:normal;
-    font-style:normal;
-}
-
-@font-face{
-    font-family:"u font", sans-serif;
-    src: url(../fonts/sans/ultra-regular);
-    font-weight:normal;
-    font-style:normal;
-}
-
 footer{
     text-align:right;
     font-family: "rz font", sans-serif;
@@ -178,21 +154,33 @@ footer{
 .copyright{
     text-align: left;
 }
-footer a{
-    text-align: right;
-    overflow: auto;
-}
+
 .expand{
     text-decoration: none;
     width: 50%;
     display: block;
 }
 
+.main-section{
+    display: flex;
+}
+
+footer a{
+    text-align: right;
+}
+
+article{
+    width:70%;
+} 
+
+aside{
+    width:30%;
+}
+
 time{
     font-family:"o font", sans-serif;
     font-style: italic;
     text-align: left;
-    
 }
 
 button{
@@ -205,6 +193,7 @@ button{
     border-radius: 1rem;
     text-align: center;
     margin: 25%;
+    margin-top: 8rem;
 }
 
 a{
@@ -216,31 +205,11 @@ a:link{
     color: #33659A;
 }
 
-a:visited{
-    color:#33658A;
-    }
+nav a:active{
+    transform: rotate(-5deg);
+}
 
 a:hover{
     text-decoration-line: none;
     color:goldenrod;
-    }
-
-.main-section{
-    display: flex;
-}
-
-article{
-    width:70%;
-} 
-
-aside{
-    width:30%;
-}
-
-.grid img{
-    width: 100%;
-}
-
-.pic{
-    padding-top: 0;
 }
