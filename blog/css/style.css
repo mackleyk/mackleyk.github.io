@@ -47,37 +47,36 @@
 
 
 /* ------ START WRITING YOUR CODE BELOW ------ */
+
 @font-face{
-    font-family:"l font", sans-serif;
-    src: url(../fonts/sans-serif/lato-regular);
+    font-family:l font;
+    src: url(../fonts/sans-serif/lato-regular.ttf) format('truetype');
     font-weight:normal;
     font-style:normal;
 }
 
 @font-face{
-    font-family:"o font", sans-serif;
-    src: url(../fonts/sans-serif/opensans-regular);   
+    font-family:o font;
+    src: url(../fonts/sans-serif/opensans-regular.ttf) format('truetype');   
     font-weight:normal;
     font-style:normal;
 }
 
 @font-face{
-    font-family:"rz font", sans-serif;
-    src: url(../fonts/sans/rozhaone-regular);
+    font-family: j font;
+    src: url(../fonts/serif/josefinslab-regular.ttf) format('ruetype');
     font-weight:normal;
-    font-style:normal;
+    font-style:normal;    
 }
 
 @font-face{
-    font-family:"u font", sans-serif;
-    src: url(../fonts/sans/ultra-regular);
-    font-weight:normal;
-    font-style:normal;
+    font-family: r font;
+    src: url(../fonts/serif/robotoslab-regular.ttf) format('truetype');
 }
 
 header{
+    font-family: "l font", sans-serif;
     letter-spacing: .125rem;
-    font-family: "u font", serif;
     font-size: 1.75rem;
     margin: 1rem;
     text-align: center;
@@ -85,13 +84,21 @@ header{
     padding: 1rem;
 }
 
+h2{
+    font-family: "o font", sans-serif;
+    font-size: 1.5rem;
+}
+
 h3{
-    margin: .5rem;
+    font-family: "o font", sans-serif;
+    font-size: 1.25rem;
+    margin: .25rem;
     margin-bottom: 0;
-    padding: .5rem;
+    padding: .25rem;
 }
 
 .highlight{
+    font-family: "l font", sans-serif;
     border-color: darkslateblue;
     background-color: mediumblue;
     color: white;
@@ -121,6 +128,7 @@ h3{
 }
 
 nav{
+    font-family: "l font", sans-serif;
     border-top: .125rem solid black;
     border-bottom: .125rem solid black;
     word-spacing: 8rem;
@@ -133,23 +141,18 @@ li{
     display: inline;
 }
 
-li:nth-child(2){
-    text-decoration-line: line-through;
-    transform: rotate -5deg;
-}
-
 p{
-    letter-spacing: .125rem;
+    font-family: "l font", sans-serif;
+    letter-spacing: .1125rem;
     word-spacing: .0025rem;
     font-size: .75rem;
     padding: .5rem;
     margin: .25rem;
-    font-family: "l font", sans-serif;
 }
 
 footer{
+    font-family: "r font", serif;
     text-align:right;
-    font-family: "rz font", sans-serif;
     font-size: .80rem;
 }
 
@@ -163,6 +166,11 @@ footer{
     width: .5rem;
     width: 50%;
     display: block;
+    border-bottom: .225rem;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    padding: 1rem;
+    margin-left: 1rem;
 }
 
 .main-section{
@@ -175,6 +183,10 @@ footer a{
 
 article{
     width:70%;
+    border-right: .225rem;
+    border-right-color: black;
+    border-right-style: solid;
+    
 } 
 
 aside{
@@ -182,13 +194,13 @@ aside{
 }
 
 time{
-    font-family:"o font", sans-serif;
+    font-family: "j font", serif;
     font-style: italic;
     text-align: left;
 }
 
 button{
-    font-family: "u font", serif;
+    font-family: "j font", serif;
     font-weight: 200;
     font-size: 2rem;
     background-color: dodgerblue;
@@ -196,8 +208,9 @@ button{
     color: white;
     border-radius: 1rem;
     text-align: center;
-    margin: 25%;
-    margin-top: 8rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    text-transform: uppercase;
 }
 
 a{
@@ -207,14 +220,27 @@ a{
 
 a:link{
     color: #33659A;
+    display: inline-block;
 }
 
-nav a:active{
-    transform: rotate(-5deg);
+a:visited{
+    color: black;
 }
 
 a:hover{
     text-decoration-line: none;
     color:goldenrod;
-    transform: rotate(5deg);
+}
+
+a:active{
+    transform: rotate(-5deg);
+}
+
+a:focus{
+    transform: rotate(-5deg);
+    text-decoration-line:line-through;
+}
+
+&#x26AB{
+    width: 25%;
 }
